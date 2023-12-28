@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>TOP URBAN - Radio</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/boing.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/venobox/venobox.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: TheEvent
+    Theme URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
+        <a href="#intro" class="scrollto"><img src="img/logo.png" alt="" title=""></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#intro">Home</a></li>
+          <li><a href="#about">About</a></li>
+       <!--==========================   <li><a href="#speakers">Speakers</a></li> ============================-->
+       <!--==========================   <li><a href="#schedule">Schedule</a></li> ============================-->
+       <!--==========================   <li><a href="#venue">Venue</a></li> ============================-->
+       <!--==========================   <li><a href="#hotels">Hotels</a></li> ============================-->
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#supporters">Sponsors</a></li>
+    <!--==========================      <li><a href="#contact">Contact</a></li> ============================-->
+         <li class="buy-tickets"><a href="#buy-tickets">Buy Tickets</a></li> 
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+    <div class="contenedor">
+      
+      <nav class="navbar  navbar-light bg-boing fixed-top">
+        
+        <div class="container-fluid">
+          
+            <div class="row w-100">
+               
+             
+                
+            </div>
+        </div>
+        
+    </nav>   
+    <div class="intro-container wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+    
+    </div>
+
+    
+
+    
+    </div>
+    
+  </section>
+
+  <main id="main">
+    <div class="col-12 d-lg-block player-container">
+      <div class="player mb-2 pt-4">
+<div class="row no-gutter  bg-songname">
+<div class="bg-songname col-3 m-3">
+  <img src="_shared/imagenes/programas/12/0000570.gif" class="img-fluid" alt="">
+</div>
+
+<div id="btnPlayPause" class="col-2 m-0 p-2 play" title="Play">
+<img src="img/play-negro2.png" alt="" onclick="playPauseAudio();" class="btnPlay img-fluid align-middle">
+<img src="img/pause-negro2.png" alt="" onclick="stopAudio();" class="btnPause img-fluid align-middle">
+<!-- <a href="#" class="btn btn-play"></a> -->
+</div>
+<div class="title col-3 txt-black bg-songname pt-2">
+ <h4 class="m-0"> ░░░░░░░░░  </h4> 
+  <h5 class="m-0">Hit Music Station. </h5>
+  
+  <div class="social-links  ">
+    
+    <a href="https://www.facebook.com/TOPURBANRadio/ " target="_blank" class="facebook m- "><i class="fa fa-facebook"></i></a>
+    <a href="#" class="instagram m-1"><i class="fa fa-instagram"></i></a>
+    <a href="#" class="google-plus m-1"><i class="fa fa-whatsapp"></i></a>
+    <a href="#" class="linkedin m-1"><i class="fa fa-youtube"></i></a>
+  </div> 
+  
+  <p></p>
+</div>
+<div class="action col-2">
+  <div class="row">
+      <div class="col text-center pt-3 volume">
+        <div id="btnVolume" class="high" title="Volume">
+
+          
+          <img class="volume-level volume-level-low" onclick="volumeMid()" src="img/volume-low.png" alt="">
+          <img class="volume-level volume-level-mid" onclick="volumeHigh()" src="img/volume-mid.png" alt="">
+          <img class="volume-level volume-level-high" onclick="volumeMute()" src="img/volume-high.png" alt="">
+          <img class="volume-level volume-level-mute" onclick="volumeLow()" src="img/volume-mute.png" alt="">
+        </div>
+      </div>
+  </div>
+
+</div>
+</div>
+
+</div>
+
+<audio id="stream" src="http://stream.zeno.fm/4cv84z0m0wzuv">
+<p>Disfruta de la mejor musica.</p>
+</audio>
+<div id="audio_player">
+<!--<button id='btnPlayPause' class='play' title='play' accesskey="P" onclick='playPauseAudio();'>Play</button>
+<button id='btnStop' class='stop' title='stop' accesskey="X" onclick='stopAudio();'>Stop</button>
+<input type="range" id="volume-bar" title="volume" min="0" max="100" step="1" value="1">
+<button id='btnMute' class='mute' title='mute' onclick='muteVolume();'>Mute</button>	-->
+</div>
+
+
+<script>
+var src = "http://stream.zeno.fm/4cv84z0m0wzuv";
+var player = document.getElementById('stream');
+var initialVolume = 1;
+btnPlayPause = document.getElementById('btnPlayPause');
+btnVolume = document.getElementById('btnVolume');
+btnMute      = document.getElementById('btnMute');
+source       = document.getElementById('audioSource');
+player.src = src;
+player.volume = 1;
+
+// Add a listener for the play and pause events so the buttons state can be updated
+player.addEventListener('play', function() {
+// Change the button to be a pause button
+changeButtonType(btnPlayPause, 'pause');
+}, false);
+
+player.addEventListener('pause', function() {
+// Change the button to be a play button
+changeButtonType(btnPlayPause, 'play');
+}, false);
+
+player.addEventListener('ended', function() { this.pause(); }, false);	
+
+
+function playPauseAudio() {
+if (player.src) {
+if (player.paused || player.ended) {
+// Change the button to a pause button
+changeButtonType(btnPlayPause, 'pause');
+player.play();
+}
+else {
+// Change the button to a play button
+changeButtonType(btnPlayPause, 'play');
+player.pause();
+}
+}
+}
+
+// Stop the current media from playing, and return it to the start position
+function stopAudio() {
+if (player.src) {
+player.pause();
+changeButtonType(btnPlayPause, 'play');
+}
+}
+
+function volumeLow() {
+player.muted = false;
+player.volume = 0.33;
+btnVolume.className = 'low';
+console.log('low');
+}
+
+function volumeMid() {
+player.muted = false;
+player.volume = 0.66;
+btnVolume.className = 'mid';
+console.log('mid');
+}
+
+function volumeHigh() {
+player.muted = false;
+player.volume = 1;
+btnVolume.className = 'high';
+console.log('high');
+}
+
+function volumeMute() {
+player.volume = 0.33;
+player.muted = true;
+btnVolume.className = 'mute';
+console.log('mute');
+}
+
+// Toggles the media player's mute and unmute status
+function muteVolume() {
+if (player.src) {
+if (player.muted) {
+// Change the button to a mute button
+changeButtonType(btnMute, 'mute');
+player.muted = false;
+}
+else {
+// Change the button to an unmute button
+changeButtonType(btnMute, 'unmute');
+player.muted = true;
+}
+}
+}
+
+// Replays the media currently loaded in the player
+function replayAudio() {
+if (player.src) {
+resetPlayer();
+player.play();
+}
+}
+
+// Updates a button's title, innerHTML and CSS class
+function changeButtonType(btn, value) {
+btn.title     = value;
+// btn.innerHTML = value;
+btn.classList.remove('play');
+btn.classList.remove('pause');
+btn.classList.remove('mute');
+btn.classList.remove('unmute');
+btn.classList.add(value);
+console.log('change', btn)
+}
+
+function resetPlayer() {
+//clear the current song
+player.src = '';
+// Move the media back to the start
+player.currentTime = 0;
+// Set the play/pause button to 'play'
+changeButtonType(btnPlayPause, 'play');
+}  
+
+</script>            </div>
+    <!--==========================
+      About Section
+    ============================-->
+    
+
+    <!--==========================
+      Speakers Section
+    ============================-->
+  
+
+    <!--==========================
+      Schedule Section
+    ============================-->
+    
+          <!-- End Schdule Day 1 -->
+
+          <!-- Schdule Day 2 -->
+          
+          <!-- End Schdule Day 2 -->
+
+          <!-- Schdule Day 3 -->
+          
+          <!-- End Schdule Day 2 -->
+
+      
+   
+
+    <!--==========================
+      Venue Section
+    ============================-->
+    
+
+    <!--==========================
+      Hotels Section
+    ============================-->
+    
+
+    <!--==========================
+      Gallery Section
+    ============================-->
+    
+
+    <!--==========================
+      Sponsors Section
+    ============================-->
+    
+
+    <!--==========================
+      F.A.Q Section
+    ============================-->
+    
+
+    <!--==========================
+      Subscribe Section
+    ============================-->
+    
+    <!--==========================
+      Buy Ticket Section
+    ============================-->
+    
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    
+    <!-- #contact -->
+
+  </main>
+
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+   
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>TOP URBAN Radio</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
+        -->
+        Designed by <a href="https://www.facebook.com/Desing.Ghost.Peru/">Desing GHOST</a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/venobox/venobox.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
